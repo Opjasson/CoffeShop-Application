@@ -77,7 +77,7 @@ class MainRepository {
         return listData
     }
 
-    fun loadItemCategory(category: String): LiveData<MutableList<ItemsModel>>{
+    fun loadItemCategory(categoryId: String): LiveData<MutableList<ItemsModel>>{
         val itemsLiveData= MutableLiveData<MutableList<ItemsModel>>()
         val ref = firebaseDatabase.getReference("Items")
         val query: Query= ref.orderByChild("categoryId").equalTo(categoryId)
