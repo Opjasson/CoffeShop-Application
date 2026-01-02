@@ -21,7 +21,7 @@ class CategoryAdapter(val items: MutableList<CategoryModel>):
 
             private lateinit var context: Context
             private var selectedPosition=-1
-private var lastSelectedPosition=-1
+            private var lastSelectedPosition=-1
 
 
     inner class Viewholder(val binding: ViewholderCategoryBinding):
